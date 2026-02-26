@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Hess Family Beautiful Puppies - MyPuppies.co</title>
+    <meta name="description" content="Learn about Hess Family Beautiful Puppies in Russell, MA. Family-raised Goldendoodles, Bernedoodles, and more with health guarantees.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --mp-navy: #002a48;
+            --mp-navy-light: #003459;
+            --mp-orange: #ffab5f;
+            --mp-orange-dark: #e8953f;
+            --mp-bg: #fffcf8;
+            --mp-white: #ffffff;
+            --mp-text: #1a1a1a;
+            --mp-text-light: #4a5568;
+            --mp-text-muted: #718096;
+            --mp-border: #e2e0dc;
+            --mp-border-light: #f0eeea;
+            --hess-brown: #5C3317;
+            --hess-brown-light: #8B5E3C;
+            --hess-brown-bg: #F9F3EC;
+            --green-700: #15803d;
+            --green-100: #dcfce7;
+            --red-50: #FEF2F2;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+            --radius: 10px;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--mp-text);
+            background: var(--mp-bg);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ============================================
+           MYPUPPIES SITE HEADER
+           ============================================ */
+        .mp-header {
+            background: var(--mp-bg);
+            border-bottom: 1px solid var(--mp-border);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .mp-header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .mp-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+        .mp-logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--mp-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+        .mp-logo-text {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--mp-navy);
+            letter-spacing: -0.3px;
+        }
+        .mp-nav {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .mp-nav a {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--mp-text-light);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.15s;
+        }
+        .mp-nav a:hover { color: var(--mp-navy); background: rgba(0,42,72,0.05); }
+        .mp-nav a.active { color: var(--mp-navy); background: rgba(0,42,72,0.08); }
+        .mp-nav-dropdown { position: relative; }
+        .mp-nav-dropdown > a::after { content: ' ▾'; font-size: 10px; opacity: 0.5; }
+        .mp-nav-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--mp-white);
+            border: 1px solid var(--mp-border);
+            border-radius: 8px;
+            padding: 6px;
+            min-width: 200px;
+            box-shadow: var(--shadow-md);
+            z-index: 10;
+        }
+        .mp-nav-dropdown:hover .mp-nav-dropdown-menu { display: block; }
+        .mp-nav-dropdown-menu a { display: block; padding: 8px 12px; border-radius: 6px; font-size: 14px; }
+        .mp-nav-dropdown-menu a:hover { background: var(--mp-bg); }
+        .mp-nav-search {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid var(--mp-border);
+            background: var(--mp-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+        .mp-mobile-menu {
+            display: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            border: 1px solid var(--mp-border);
+            background: var(--mp-white);
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        /* ============================================
+           SUBPAGE HERO BANNER
+           ============================================ */
+        .subpage-hero {
+            background: linear-gradient(135deg, #3B1F0B 0%, #5C3317 60%, #6F3E1C 100%);
+            color: var(--mp-white);
+            padding: 36px 0 32px;
+            position: relative;
+        }
+        .subpage-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 4px;
+            background: var(--mp-orange);
+        }
+        .subpage-hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .subpage-hero-identity {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .subpage-hero-logo-mark {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+        .subpage-hero-logo-text { line-height: 1.15; }
+        .subpage-hero-logo-name {
+            font-family: 'Georgia', serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--mp-white);
+        }
+        .subpage-hero-logo-script {
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            font-size: 13px;
+            color: rgba(255,255,255,0.6);
+        }
+        .subpage-hero-divider {
+            width: 1px;
+            height: 32px;
+            background: rgba(255,255,255,0.2);
+            flex-shrink: 0;
+        }
+        .subpage-hero h1 {
+            font-size: clamp(24px, 3vw, 34px);
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.3px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 12px 24px;
+            border-radius: 100px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .btn-orange {
+            background: var(--mp-orange);
+            color: var(--mp-navy);
+            border-color: var(--mp-orange);
+        }
+        .btn-orange:hover { background: var(--mp-orange-dark); border-color: var(--mp-orange-dark); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(255,171,95,0.4); }
+        .btn-outline-navy {
+            background: transparent;
+            color: var(--mp-navy);
+            border-color: var(--mp-navy);
+        }
+        .btn-outline-navy:hover { background: var(--mp-navy); color: var(--mp-white); }
+
+        /* Contact Form */
+        .hero-form {
+            background: var(--mp-white);
+            border-radius: 14px;
+            padding: 28px;
+            box-shadow: var(--shadow-lg);
+            color: var(--mp-text);
+        }
+        .hero-form h2 {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--mp-navy);
+            margin-bottom: 4px;
+        }
+        .hero-form .form-sub {
+            font-size: 13px;
+            color: var(--mp-text-muted);
+            margin-bottom: 18px;
+        }
+        .form-group { margin-bottom: 12px; }
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--mp-text-light);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--mp-border);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 15px;
+            color: var(--mp-text);
+            background: var(--mp-bg);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--mp-navy);
+            box-shadow: 0 0 0 3px rgba(0,42,72,0.1);
+        }
+        .form-group textarea { resize: vertical; min-height: 60px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .form-submit {
+            width: 100%;
+            padding: 12px;
+            background: var(--mp-orange);
+            color: var(--mp-navy);
+            border: none;
+            border-radius: 100px;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 4px;
+        }
+        .form-submit:hover { background: var(--mp-orange-dark); }
+        .form-micro {
+            text-align: center;
+            font-size: 12px;
+            color: var(--mp-text-muted);
+            margin-top: 8px;
+        }
+
+        /* ============================================
+           TAB NAV
+           ============================================ */
+        .breeder-tabs {
+            background: var(--mp-white);
+            border-bottom: 1px solid var(--mp-border);
+            position: sticky;
+            top: 60px;
+            z-index: 90;
+        }
+        .breeder-tabs-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            gap: 0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .breeder-tab {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--mp-text-muted);
+            text-decoration: none;
+            padding: 14px 20px;
+            border-bottom: 2px solid transparent;
+            white-space: nowrap;
+            transition: all 0.15s;
+            flex-shrink: 0;
+        }
+        .breeder-tab:hover { color: var(--mp-navy); }
+        .breeder-tab.active {
+            color: var(--mp-navy);
+            border-bottom-color: var(--mp-orange);
+        }
+
+        /* ============================================
+           SHARED SECTION STYLES
+           ============================================ */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .section { padding: 56px 0; }
+        .section-alt { background: var(--mp-white); }
+        .section-warm { background: var(--hess-brown-bg); }
+
+        .section-label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--mp-orange-dark);
+            margin-bottom: 8px;
+        }
+        .section-title {
+            font-size: clamp(24px, 3vw, 32px);
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--mp-navy);
+            margin-bottom: 16px;
+        }
+        .section-title-center { text-align: center; }
+        .section-label-center { text-align: center; }
+        .section-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--mp-text-light);
+            max-width: 600px;
+        }
+
+        /* ============================================
+           TRUST BAR
+           ============================================ */
+        .trust-bar {
+            background: var(--mp-white);
+            border-bottom: 1px solid var(--mp-border);
+            padding: 16px 0;
+        }
+        .trust-bar-inner {
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            flex-wrap: wrap;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--mp-navy);
+        }
+        .trust-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--green-100);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+
+        /* ============================================
+           PAGE LAYOUT
+           ============================================ */
+        .page-layout {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 40px;
+            align-items: start;
+        }
+
+        /* Info blocks */
+        .info-block {
+            background: var(--mp-white);
+            border: 1px solid var(--mp-border);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        .info-block h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--mp-navy);
+            margin-bottom: 12px;
+        }
+        .info-block p {
+            font-size: 15px;
+            color: var(--mp-text-light);
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+        .info-block p:last-child { margin-bottom: 0; }
+        .info-block ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .info-block ul li {
+            font-size: 15px;
+            color: var(--mp-text-light);
+            line-height: 1.7;
+            padding: 6px 0;
+            border-bottom: 1px solid var(--mp-border-light);
+        }
+        .info-block ul li:last-child { border-bottom: none; }
+
+        /* Breed cards */
+        .breeds-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 16px 0;
+        }
+        .breed-card {
+            background: var(--hess-brown-bg);
+            border: 1px solid var(--mp-border);
+            border-radius: 8px;
+            padding: 14px 18px;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--hess-brown);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .breed-card-icon { font-size: 20px; }
+
+        /* Size cards */
+        .size-list { margin-top: 16px; }
+        .size-item {
+            padding: 14px 0;
+            border-bottom: 1px solid var(--mp-border-light);
+        }
+        .size-item:last-child { border-bottom: none; }
+        .size-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--mp-navy);
+            margin-bottom: 4px;
+        }
+        .size-desc {
+            font-size: 14px;
+            color: var(--mp-text-light);
+            line-height: 1.6;
+        }
+
+        /* Map placeholder */
+        .map-placeholder {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, #e8e4df, #d4cfc8);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--mp-text-muted);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        /* Sidebar visit card */
+        .visit-card {
+            background: var(--hess-brown-bg);
+            border: 1px solid var(--mp-border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .visit-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--mp-navy);
+            margin-bottom: 12px;
+        }
+        .visit-card p {
+            font-size: 14px;
+            color: var(--mp-text-light);
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        .visit-card-address {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--hess-brown);
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+        .visit-card-phone {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--hess-brown);
+        }
+        .visit-card-phone a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .visit-card-phone a:hover { color: var(--mp-orange-dark); }
+
+        /* ============================================
+           FINAL CTA
+           ============================================ */
+        .final-cta {
+            padding: 64px 0;
+            background: linear-gradient(135deg, var(--mp-navy), var(--mp-navy-light));
+            color: var(--mp-white);
+            text-align: center;
+        }
+        .final-cta h2 {
+            font-size: clamp(26px, 3.5vw, 36px);
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+        .final-cta p {
+            font-size: 17px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 28px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .final-cta-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .btn-outline-white {
+            background: transparent;
+            color: var(--mp-white);
+            border-color: rgba(255,255,255,0.4);
+        }
+        .btn-outline-white:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.6); }
+
+        /* ============================================
+           BREEDER SUBFOOTER
+           ============================================ */
+        .breeder-subfooter {
+            background: #4A2812;
+            padding: 32px 0;
+        }
+        .breeder-subfooter-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+        .breeder-subfooter-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+        .breeder-subfooter-logo-icon {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+        .breeder-subfooter-logo-icon span { font-size: 28px; }
+        .breeder-subfooter-logo-name {
+            font-family: 'Georgia', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--mp-white);
+            text-align: center;
+            line-height: 1.2;
+        }
+        .breeder-subfooter-logo-script {
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            font-size: 15px;
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+        }
+        .breeder-subfooter-logo-tagline {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: rgba(255,255,255,0.5);
+            margin-top: 4px;
+        }
+        .breeder-subfooter-photo {
+            width: 220px;
+            height: 140px;
+            border-radius: 100px;
+            overflow: hidden;
+            border: 3px solid rgba(255,255,255,0.2);
+            flex-shrink: 0;
+            background: #3B1F0B;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.4);
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .breeder-subfooter-info {
+            color: rgba(255,255,255,0.8);
+            font-size: 15px;
+            line-height: 1.7;
+            flex-shrink: 0;
+        }
+        .breeder-subfooter-info strong {
+            color: var(--mp-white);
+            font-size: 17px;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .breeder-subfooter-info a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+        .breeder-subfooter-info a:hover { color: var(--mp-orange); }
+        .breeder-subfooter-tagline {
+            margin-top: 8px;
+            font-style: italic;
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        @media (max-width: 768px) {
+            .breeder-subfooter-inner {
+                flex-direction: column;
+                gap: 24px;
+                text-align: center;
+            }
+            .breeder-subfooter-info { text-align: center; }
+        }
+
+        /* ============================================
+           MYPUPPIES FOOTER
+           ============================================ */
+        .mp-footer {
+            background: var(--mp-navy);
+            color: rgba(255,255,255,0.6);
+            padding: 48px 0 24px;
+        }
+        .mp-footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 32px;
+        }
+        .mp-footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .mp-footer-brand-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--mp-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+        .mp-footer-brand-text {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--mp-white);
+        }
+        .mp-footer-desc {
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 280px;
+        }
+        .mp-footer h4 {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--mp-white);
+            margin-bottom: 14px;
+        }
+        .mp-footer-links { list-style: none; }
+        .mp-footer-links li { margin-bottom: 8px; }
+        .mp-footer-links a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.15s;
+        }
+        .mp-footer-links a:hover { color: var(--mp-orange); }
+        .mp-footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .mp-footer-bottom a {
+            color: rgba(255,255,255,0.4);
+            text-decoration: none;
+        }
+        .mp-footer-bottom a:hover { color: var(--mp-orange); }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 960px) {
+            .page-layout { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .mp-nav { display: none; }
+            .mp-mobile-menu { display: flex; }
+            .subpage-hero { padding: 24px 0 20px; }
+            .subpage-hero-inner { flex-direction: column; text-align: center; }
+            .subpage-hero-identity { justify-content: center; }
+            .breeder-tabs-inner { gap: 0; }
+            .breeder-tab { padding: 12px 14px; font-size: 13px; }
+            .trust-bar-inner { gap: 16px; }
+            .trust-item { font-size: 12px; }
+            .breeds-grid { grid-template-columns: 1fr; }
+            .mp-footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+        }
+        @media (max-width: 480px) {
+            .mp-footer-grid { grid-template-columns: 1fr; }
+            .mp-footer-bottom { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============================================
+     MYPUPPIES.CO SITE HEADER
+     ============================================ -->
+<header class="mp-header">
+    <div class="mp-header-inner">
+        <a href="/" class="mp-logo">
+            <div class="mp-logo-icon">🐾</div>
+            <div class="mp-logo-text">MyPuppies</div>
+        </a>
+        <nav class="mp-nav">
+            <a href="/">Home</a>
+            <a href="/aboutus">About Us</a>
+            <a href="/allpuppies">All Puppies</a>
+            <div class="mp-nav-dropdown">
+                <a href="/breeders" class="active">Breeders</a>
+                <div class="mp-nav-dropdown-menu">
+                    <a href="/hess-family-puppies" style="color:var(--mp-navy); font-weight:700;">Hess Family Puppies</a>
+                    <a href="/furry-puppy-friends">Furry Puppy Friends</a>
+                    <a href="/top-notch-paws">Top Notch Paws</a>
+                    <a href="/wildwood-puppies">Wildwood Puppies</a>
+                </div>
+            </div>
+            <a href="/allblog">Blog</a>
+            <div class="mp-nav-search">
+                <svg width="16" height="16" fill="none" stroke="var(--mp-text-muted)" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
+        </nav>
+        <button class="mp-mobile-menu">☰</button>
+    </div>
+</header>
+
+<!-- ============================================
+     SUBPAGE HERO BANNER
+     ============================================ -->
+<section class="subpage-hero">
+    <div class="subpage-hero-inner">
+        <div class="subpage-hero-identity">
+            <div class="subpage-hero-logo-mark">🐶🐶</div>
+            <div class="subpage-hero-logo-text">
+                <div class="subpage-hero-logo-name">Hess Family</div>
+                <div class="subpage-hero-logo-script">Beautiful Puppies</div>
+            </div>
+        </div>
+        <div class="subpage-hero-divider"></div>
+        <h1>About Us</h1>
+    </div>
+</section>
+
+<!-- ============================================
+     TAB NAVIGATION
+     ============================================ -->
+<nav class="breeder-tabs">
+    <div class="breeder-tabs-inner">
+        <a href="hess-family-puppies-redesign.html" class="breeder-tab">Breeder Home</a>
+        <a href="hess-family-puppies-meet-our-puppies.html" class="breeder-tab">Meet Our Puppies</a>
+        <a href="hess-family-puppies-schedule-a-visit.html" class="breeder-tab">Schedule a Visit</a>
+        <a href="hess-family-puppies-about-us.html" class="breeder-tab active">About Us</a>
+    </div>
+</nav>
+
+<!-- ============================================
+     TRUST BAR
+     ============================================ -->
+<section class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-inner">
+            <div class="trust-item">
+                <div class="trust-icon">🛡️</div>
+                Health Guarantee
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">🩺</div>
+                Vet-Checked
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">❤️</div>
+                50+ Happy Families
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">📍</div>
+                Local Pickup · Russell, MA
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     ABOUT US CONTENT
+     ============================================ -->
+<section class="section">
+    <div class="container">
+        <div class="page-layout">
+            <div>
+                <!-- Who and Where -->
+                <div class="info-block">
+                    <div class="section-label">Who We Are</div>
+                    <h3>Who and Where Are We?</h3>
+                    <p>Our family has been involved in dog breeding for many years. Located in the quiet town of Russell, MA, just off Route 20, we raise puppies—but we're not a pet store and don't keep regular business hours or always have puppies available. Feel free to call or text us to find out about our current and upcoming litters. Because demand is high, our puppies are often adopted very quickly.</p>
+                </div>
+
+                <!-- When Can You Visit -->
+                <div class="info-block">
+                    <div class="section-label">Visiting</div>
+                    <h3>When Can You Visit?</h3>
+                    <p>Visits are welcome by appointment most days from Monday to Saturday; we're closed on Sundays. Our modern whelping area stays clean and healthy, so please let us know if you've had contact with sick animals before your visit—we might ask you to wear booties, sanitize your hands, or occasionally meet outside, depending on the circumstances. We appreciate your cooperation!</p>
+                </div>
+
+                <!-- About the Puppy Parents -->
+                <div class="info-block">
+                    <div class="section-label">Health & Care</div>
+                    <h3>About the Puppy Parents</h3>
+                    <p>We prioritize our parent dogs' health with routine veterinary visits, up-to-date vaccinations, and DNA tests to check for genetic issues. This careful monitoring helps ensure we provide healthy puppies and confidently offer a health guarantee. (<a href="/health-guarantee" style="color:var(--mp-orange-dark); font-weight:600; text-decoration:none;">See our health guarantee</a>)</p>
+                </div>
+
+                <!-- About the Puppies -->
+                <div class="info-block">
+                    <div class="section-label">Our Puppies</div>
+                    <h3>About the Puppies</h3>
+                    <p>We are dedicated to raising happy, healthy, and beautiful puppies! Every puppy comes to you with a vet-issued health certificate, complete and current vaccination records, and a two-year genetic health guarantee. All of our puppies are also microchipped.</p>
+                </div>
+
+                <!-- What Breeds -->
+                <div class="info-block">
+                    <div class="section-label">Our Breeds</div>
+                    <h3>Primary Breeds We Offer</h3>
+                    <div class="breeds-grid">
+                        <div class="breed-card">
+                            <span class="breed-card-icon">🐶</span>
+                            Bernedoodles
+                        </div>
+                        <div class="breed-card">
+                            <span class="breed-card-icon">🐶</span>
+                            Goldendoodles
+                        </div>
+                        <div class="breed-card">
+                            <span class="breed-card-icon">🐶</span>
+                            Samoyeds
+                        </div>
+                        <div class="breed-card">
+                            <span class="breed-card-icon">🐶</span>
+                            Havapoo
+                        </div>
+                        <div class="breed-card">
+                            <span class="breed-card-icon">🐶</span>
+                            Poodles
+                        </div>
+                    </div>
+                    <p style="margin-top:14px; font-size:14px; color:var(--mp-text-light); line-height:1.6;">We also occasionally have litters of other Doodle breeds available. Contact us to ask about current and upcoming litters.</p>
+                </div>
+
+                <!-- What Sizes -->
+                <div class="info-block">
+                    <div class="section-label">Available Sizes</div>
+                    <h3>What Sizes Do We Offer?</h3>
+                    <p><strong style="color:var(--mp-navy);">Goldendoodles</strong> — Micro, Mini, and Mid size</p>
+                    <p><strong style="color:var(--mp-navy);">Bernedoodles</strong> — Mini and Mid size</p>
+                    <p><strong style="color:var(--mp-navy);">Samoyed</strong> — Standard size</p>
+
+                    <div class="size-list">
+                        <div class="size-item">
+                            <div class="size-name">Micro (16-20 lbs)</div>
+                            <div class="size-desc">Great for families, children, seniors, small homes, apartments, and modest yards.</div>
+                        </div>
+                        <div class="size-item">
+                            <div class="size-name">Mini (20-30 lbs)</div>
+                            <div class="size-desc">Remain manageable for many seniors and are excellent family companions.</div>
+                        </div>
+                        <div class="size-item">
+                            <div class="size-name">Mid Size (30+ lbs)</div>
+                            <div class="size-desc">Well-suited to larger spaces and active lifestyles—perfect for athletic owners and families.</div>
+                        </div>
+                        <div class="size-item">
+                            <div class="size-name">Standard (40+ lbs)</div>
+                            <div class="size-desc">Refers to the full adult size of the mother for any listed breed.</div>
+                        </div>
+                    </div>
+                    <p style="margin-top:12px; font-style:italic; color:var(--mp-text-muted);">Every size offers its own advantages, allowing you to choose what suits your needs best.</p>
+                </div>
+
+                <!-- Adoption Process -->
+                <div class="info-block">
+                    <div class="section-label">How It Works</div>
+                    <h3>About the Process of Adoption</h3>
+                    <p>Our adoption process is not complicated... We do focus first and foremost on the New England states and local so rather than having an application process we choose to meet personally with you at some point of the adoption. We are happy to use Zoom on the occasion that distance is a problem, however we still hope to meet you when you pick up your puppy or when we bring the puppy to you.</p>
+                    <p>We do not ship puppies, we expect you will pick them up or we will bring you for an additional fee...</p>
+                    <p>Keeping the transaction personal is a priority and maintaining the friendship beyond the transaction is important to us.</p>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div>
+                <!-- Visit Us Card -->
+                <div class="visit-card" style="position:sticky; top:140px;">
+                    <div class="map-placeholder">
+                        📍 Russell, MA — Map
+                    </div>
+                    <h3>Visit Us</h3>
+                    <div class="visit-card-address">
+                        655 Huntington Rd<br>
+                        Russell, MA 01071
+                    </div>
+                    <p>Mon-Sat by appointment<br>Closed Sundays</p>
+                    <div style="margin-top:16px;">
+                        <a href="hess-family-puppies-schedule-a-visit.html" class="btn btn-orange" style="width:100%; font-size:14px;">Schedule a Visit &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="hero-form" id="contact" style="margin-top:20px;">
+                    <h2>Get in Touch</h2>
+                    <p class="form-sub">Have questions? We'd love to hear from you.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required autocomplete="tel">
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">Zip Code</label>
+                                <input type="text" id="zip" name="zip" placeholder="01071" autocomplete="postal-code">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@email.com" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span style="font-weight:400;color:var(--mp-text-muted)">(optional)</span></label>
+                            <textarea id="message" name="message" placeholder="Tell us about your family or ask us anything..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Send My Inquiry &rarr;</button>
+                        <p class="form-micro">We typically respond within a few hours. No spam, ever.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     CALL TO ACTION
+     ============================================ -->
+<section class="final-cta">
+    <div class="container">
+        <h2>Ready to Meet Your New Best Friend?</h2>
+        <p>Call or text us at <strong>413-310-6722</strong> — The Hess Family</p>
+        <div class="final-cta-buttons">
+            <a href="hess-family-puppies-meet-our-puppies.html" class="btn btn-orange" style="font-size:17px; padding:14px 32px;">Meet Our Puppies</a>
+            <a href="hess-family-puppies-schedule-a-visit.html" class="btn btn-outline-white" style="font-size:17px; padding:14px 32px;">Schedule a Visit</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     BREEDER SUBFOOTER
+     ============================================ -->
+<section class="breeder-subfooter">
+    <div class="container">
+        <div class="breeder-subfooter-inner">
+            <div class="breeder-subfooter-logo">
+                <div class="breeder-subfooter-logo-icon">
+                    <span>🐶</span>
+                    <span>🐶</span>
+                </div>
+                <div class="breeder-subfooter-logo-name">Hess Family</div>
+                <div class="breeder-subfooter-logo-script">Beautiful Puppies</div>
+                <div class="breeder-subfooter-logo-tagline">Local Puppies for Local Families</div>
+            </div>
+            <div class="breeder-subfooter-photo">
+                [Family Group Photo]
+            </div>
+            <div class="breeder-subfooter-info">
+                <strong>Hess Family Beautiful Puppies</strong>
+                655 Huntington Rd<br>
+                Russell, MA 01071<br>
+                <a href="tel:4133106722">413-310-6722</a>
+                <div class="breeder-subfooter-tagline">Locally Raised Puppies for Local Families</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     MYPUPPIES.CO FOOTER
+     ============================================ -->
+<footer class="mp-footer">
+    <div class="container">
+        <div class="mp-footer-grid">
+            <div>
+                <div class="mp-footer-brand">
+                    <div class="mp-footer-brand-icon">🐾</div>
+                    <div class="mp-footer-brand-text">MyPuppies</div>
+                </div>
+                <p class="mp-footer-desc">Connecting families with ethical, family-raised puppies from trusted breeders across New England.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul class="mp-footer-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/aboutus">About Us</a></li>
+                    <li><a href="/allpuppies">All Puppies</a></li>
+                    <li><a href="/allblog">Blog</a></li>
+                    <li><a href="/health-guarantee">Health Guarantee</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Our Breeders</h4>
+                <ul class="mp-footer-links">
+                    <li><a href="/hess-family-puppies">Hess Family Puppies</a></li>
+                    <li><a href="/furry-puppy-friends">Furry Puppy Friends</a></li>
+                    <li><a href="/top-notch-paws">Top Notch Paws</a></li>
+                    <li><a href="/wildwood-puppies">Wildwood Puppies</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>For Breeders</h4>
+                <ul class="mp-footer-links">
+                    <li><a href="/signup">Breeder Sign Up</a></li>
+                    <li><a href="/login">Breeder Login</a></li>
+                    <li><a href="/guardian-home">Guardian Home App</a></li>
+                    <li><a href="/puppy-parents">Puppy Parents</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mp-footer-bottom">
+            <span>MyPuppies &copy; 2026 created by <a href="#">PLYNTR</a></span>
+            <span>
+                <a href="#">Privacy</a> · <a href="#">Terms</a>
+            </span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
